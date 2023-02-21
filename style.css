@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+#welcome-sec {
+    background-image: url(img/main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 35px 70px;
+}
+
+header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav {
+    display: flex;
+    gap: 40px;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+header nav a:hover {
+    color: black;
+    text-shadow: 2px 2px 20px rgb(63, 61, 61);
+}
+
+header img {
+    width: 150px;
+    cursor: pointer;
+}
+
+section {
+    height: 100vh;
+    
+}
+
+.welcome-text {
+    width: 90vw;
+    margin: 300px auto;
+}
+
+.welcome-text h1 {
+    font-size: 80px;
+    text-align: center;
+    text-shadow: 2px 2px 10px #0a080a;
+    font-family: 'Inter';
+}
+
+.welcome-text p {
+    font-size: 24px;
+    max-width: 700px;
+    text-align: center;
+    margin: 100px auto;
+}
+
+
+
+#about {
+    background: #000;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h1 {
+
+    font-size: 75px;
+    line-height: 80px;
+    font-weight: 600;
+}
+
+.about-text p {
+    margin-top: 50px;
+    font-family: 'poppins';
+}
+
+#about img {
+    max-width: 600px;
+    max-height: 600px
+}
+
+
+#battle {
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0) 0%, black 70%), url(img/sec-2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.headeing {
+    padding: 100px;
+}
+
+.headeing h5 {
+    font-size: 24px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.headeing h1 {
+    text-align: center;
+    font-size: 70px;
+    font-weight: 500;
+}
+
+.boxes {
+    width: 620px;
+    height: 500px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 300px;
+    height: 130px;
+    border: 1px solid white;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'open-sans';
+}
+
+.box:last-child {
+    width: 600px;
+}
+
+.box h1 {
+    color: crimson;
+}
+
+.box p {
+    font-size: 20px;
+}
+
+
+#opinions {
+    background-image: url(img/sec-3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding: 12%;
+    background-size: 120vw;
+}
+
+.opinions-text {
+    max-width: 470px;
+    font-family: "poppins";
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+}
+
+.opinions-text h1 {
+    font-size: 80px;
+
+}
+
+.opinions-text p {
+    font-size: 18px;
+}
+
+.opinions-text button {
+    padding: 10px;
+    background-color: red;
+    font-weight: 600;
+    transition: all 0.4s;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 40px;
+    width: 200px;
+}
+
+.opinions-text button:hover {
+    color: red;
+    background-color: black;
+
+}
+
+.cards {
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 70px;
+    justify-content: center;
+}
+
+.card {
+    background-color: rgb(37, 35, 35);
+    width: 450px;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    padding: 20px;
+    
+}
+
+.card:nth-child(2) {
+    align-self: flex-start;
+}
+
+.user {
+    display: flex;
+    gap: 32px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.user-info h1 {
+    color: crimson;
+}
+
+.gray {
+    color: gray;
+}
+
+@media (max-width:1100px) {
+    #about {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .about-text h1 {
+        font-size: 40px;
+    }
+
+    #about img {
+        width: 280px;
+    }
+
+    .about-text p {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    #opinions{
+        flex-direction: column;
+    }
+
+    .opinions-text{
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    .cards{
+        gap: 10px;
+        margin: 0 auto;
+    }
+}
